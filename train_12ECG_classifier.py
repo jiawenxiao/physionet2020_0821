@@ -332,6 +332,6 @@ def train_12ECG_classifier(input_directory, output_directory):
     model= train(x_train,x_val,x_train_external,x_val_external,y_train,y_val, num_class)
     
     #save the model
-    output_directory=os.path.join(output_directory, 'resnet_0721.pkl')
+    output_directory=os.path.join(output_directory, 'resnet_0821.pkl')
     torch.save(model, output_directory)    
     
