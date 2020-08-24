@@ -46,7 +46,7 @@ def get_12ECG_features(data,header_data):
 
 def load_12ECG_model(input_directory):
     # load the model from disk 
-    f_out='resnet_0721.pkl'
+    f_out='resnet_0821.pkl'
     filename = os.path.join(input_directory,f_out)
     loaded_model = torch.load(filename,map_location=device)
     return loaded_model
